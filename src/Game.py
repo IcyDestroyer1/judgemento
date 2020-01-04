@@ -1,8 +1,9 @@
 from src.Card import *
 import pygame
-from ActualGame import *
+
 from pygame import display
 from src.spritesheet import *
+from src.Config import Config
 
 class Game:
     def __init__(self, display):
@@ -72,7 +73,6 @@ class Game:
             #half_card() #ERROR (display)
             #mycard.display_card(my_card_position)
             pygame.display.update()
-        pygame.quit()
 
         clock.tick(Config['game']['fps'])
 

@@ -41,8 +41,8 @@ class Card(object):
         # Load the image
         self.img = pygame.image.load(self.image_path)
 
-        self.width = img.get_width()/ 12
-        self.height = img.get_height()/ 4
+        self.width = self.img.get_width()/ 12
+        self.height = self.img.get_height()/ 4
         # this code will split out cards and stuff
     def split_card(self, card_index, suite_index):
         import pdb; pdb.set_trace()
